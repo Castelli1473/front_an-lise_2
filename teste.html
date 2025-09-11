@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model CSS</title>
+    <style>
+        /* BOX 1 */
+        .box1 {
+            border: 5px solid red;          /* borda vermelha sólida */
+            padding: 20px 10px 10px 5px;    /* ordem: top, right, bottom, left */
+            margin: 20px 10px;              /* top/bottom e right/left */
+            border-radius: 15px;            /* borda arredondada */
+        }
+
+        /* BOX 2 */
+        .box2 {
+            border-style: dotted;           /* estilo pontilhado */
+            border-color: blue;             /* cor da borda */
+            border-width: 2px;              /* largura */
+            
+            padding: 10px;                  /* atalho para os 4 lados */
+            margin: 15px;
+        }
+
+        /* estilo geral para todas as divs */
+        div {
+            margin-bottom: 20px;            /* só margem inferior */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+
+</html>
