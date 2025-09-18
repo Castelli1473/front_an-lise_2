@@ -1,0 +1,90 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box
+        }
+         
+        html {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .cards {
+            background-color: blueviolet;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .card img {
+            width: 150px;
+        }
+
+        .titulo {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .paragrafo {
+            font-size: 14px;
+            line-height: 12px;
+            color: rgb(rgb(209, 19, 19), rgb(5, 129, 5), rgb(7, 7, 216))
+        }
+
+        .container-estrelas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+
+        svg {
+            width: 25px;
+        }
+
+        svg:hover path {
+            fill: yellow;
+        }
+
+        .btn-enviar {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 12px;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-enviar:hover {
+            background-color: rgb(rgb(17, 80, 216), green, blue);
+        }
+
+        .btn-enviar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
