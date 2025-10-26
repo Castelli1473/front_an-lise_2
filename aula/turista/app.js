@@ -1,21 +1,30 @@
-const lugares = ['praia', 'montanha']
-        const mensagem = `
-        -- ROTEIRO DE VIAGENS -- 
-        Lugares:  ${lugares}
-        -------------------`
-        alert(mensagem)
-        const escolhaUsuario = prompt('Pra onde desaja viajar?')
-        if (escolhaUsuario == null && escolhaUsuario == NaN) {
-            alert('Por favor digite um valor na lista de viagem!')
-        } else {
-            if (lugares.includes(escolhaUsuario)) {
-                if (escolhaUsuario == 'praia') {
-                    //alert('Praia!!')
-                    window.location.href = './praia.html'
-                } else if (escolhaUsuario == 'montanha') {
-                    //alert('montanha...!!')
-                    window.location.href = './montanha.html'
-                }
+const lugares = ['praia', 'montanha', 'cachoeira']
 
-            }
+const mensagem = `
+-- ROTEIRO DE VIAGENS -- 
+Lugares disponíveis: ${lugares.join(', ')}
+-------------------
+`
+alert(mensagem)
+
+const escolhaUsuario = prompt('Pra onde deseja viajar?')
+
+if (escolhaUsuario === null) {
+    alert('Operação cancelada. Até a próxima! 👋')
+} else if (escolhaUsuario.trim() === '') {
+    alert('Por favor, digite um destino válido!')
+} else {
+    const escolha = escolhaUsuario.toLowerCase().trim()
+
+    if (lugares.includes(escolha)) {
+        if (escolha === 'praia') {
+            window.location.href = './praia.html'
+        } else if (escolha === 'montanha') {
+            window.location.href = './montanha.html'
+        } else if (escolha === 'cachoeira') {
+            window.location.href = './cachoeira.html'
         }
+    } else {
+        alert('Esse destino não está na lista de viagens!')
+    }
+}
